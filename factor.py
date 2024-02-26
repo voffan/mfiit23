@@ -4,7 +4,7 @@ def factor(n):
     if n <= 1:
         raise Exception()
     d = {}
-    m = int(n**0.5)
+    m = int(n**0.5) 
     i = 2
     while i <= m+1:
         prime = True
