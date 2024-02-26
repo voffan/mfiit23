@@ -19,3 +19,4 @@ def factor(n):
                 n = n // i
         i += 1
     return d
+
