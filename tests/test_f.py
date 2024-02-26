@@ -16,3 +16,16 @@ class TestF(unittest.TestCase):
     def test_f3(self):
         with self.assertRaises(Exception):
             factor.factor(-5)
+
+    def test_f4(self):
+        result = factor.factor(2)
+        self.assertEqual(isinstance(result, dict), True)
+        self.assertEqual(result[2], 1, "Power of 1 must be 1!")
+
+    def test_f5(self):
+        with self.assertRaises(Exception):
+            factor.factor(1)
+
+    def test_f6(self):
+        with self.assertRaises(Exception):
+            factor.factor(0)
