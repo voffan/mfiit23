@@ -1,7 +1,7 @@
 def is_prime(n):
     prime = True
-    for j in range(2,int(i**0.5)+1):
-        if i % j == 0:
+    for j in range(2,int(n**0.5)+1):
+        if n % j == 0:
             prime = False
             break
     return prime
